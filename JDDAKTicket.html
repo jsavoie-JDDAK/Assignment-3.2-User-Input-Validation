@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--Jamie Savoie :: Assignment 3.2: User Input Validation-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAMS Helpdesk Ticket</title>
+    <link rel="stylesheet" href="hd test.css">
+    <script src="JDDAKTicket.js"></script>
+</head>
+<body>
+   <h1><img id="memeImage" src="images/JJDAK.png" alt="Logo"></h1>
+
+    <form id="ticketForm" onsubmit="return false">
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname">
+        <p id="fnameStatus"></p>
+        <br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname">
+        <p id="lnameStatus"></p>
+        <br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+        <br>
+
+        <label for="issue">Enter an issue type:</label>
+        <input type="text" id="issue">
+        <p id="issueStatus"></p>
+        <br>
+
+        <label for="desc">Description of problem:</label>
+        <input type="text" id="desc">
+        <p id="descStatus"></p>
+        <br>
+
+        <input type="submit" onclick="data()">
+    </form>
+</body>
+</html>
